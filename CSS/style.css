@@ -52,13 +52,26 @@ img{
   }
 *, *::before, *::after {
     box-sizing: border-box;
+  font-family:PingFang TC;
 }
-/* ----------------------------header---------------------------- */
-
 .container{
     max-width: 940px;
     margin: 0 auto;
 }
+body{
+    font-family: 微軟正黑體, sans-serif;
+}
+/* ----------------------------container-RWD---------------------------- */
+@media(max-width:768px){
+ .container{
+    max-width:375px;
+  }
+}
+
+
+/* ----------------------------header---------------------------- */
+
+
 .header{
     margin-bottom: 60px;
 }
@@ -71,8 +84,9 @@ img{
 .nav{
     display: flex;
    justify-content: space-between;
-   
+   margin:10px 10px;
 }
+
 .banner{
     margin-left:auto;
     margin-right:auto;
@@ -83,10 +97,12 @@ img{
     align-items: center;
 }
 .index a{
-  color: #3F5D45;
-  font-size: 24px;
-  line-height:24px;
-  padding:15px;
+    font-size: 16px;
+    color: #3F5D45;
+    font-weight: bolder;
+    padding: 5px 30px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 .index a:hover{
   background-color: #EAF0ED;
@@ -108,6 +124,9 @@ img{
     .index{
         width: auto;
     }
+  .index a{
+    padding:0px;
+  }
     .index img{
         padding: 0;
     }
@@ -154,7 +173,7 @@ img{
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
-  
+    text-decoration: none;
 }
 .menu a:hover{
     background-color: #EAF0ED;
@@ -230,6 +249,7 @@ position: relative;
     padding-bottom: 16px;
     font-weight: bold;
     color: #3F5D45;
+   text-decoration: none;
 }
 
 /* ----------------------------Content-RWD----------------------------- */
@@ -283,6 +303,7 @@ position: relative;
     padding-bottom: 16px;
     padding-right:26px;
     color: #3F5D45;
+    text-decoration: none;
 }
 .pageNum  a:hover{
     color: white;
@@ -302,6 +323,7 @@ position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 43px 15%;
+  
 }
 .subscribe ul{
     display: flex;
@@ -337,6 +359,7 @@ form{
 /* ----------------------------subscribe-RWD----------------------------- */
 @media(max-width:768px){
     .subscribe{
+      max-width:100%;
     flex-direction: column;
     padding: 40px 0;
     }
@@ -349,6 +372,7 @@ form{
 .footer{
     padding: 5% 10%; 
     background: #EAF0ED;
+  
 }
 .footer_top{
     display: flex;
@@ -369,11 +393,7 @@ form{
     font-family: Helvetica Neue;
     line-height: 24px;
 }
-.footer_right{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+
 .footer_right h2{
     font-size: 24px;
     line-height: 40px;
@@ -405,6 +425,11 @@ form{
 
 /* ----------------------------footer-RWD----------------------------- */
 @media(max-width:768px){
+  .footer{
+    max-width:100%;
+    
+    align-items:center;
+  }
 .footer_bottom{
     flex-direction: column;
     align-items: flex-start;
