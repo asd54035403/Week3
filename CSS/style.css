@@ -83,8 +83,8 @@ body{
 }
 .nav{
     display: flex;
-   justify-content: space-between;
-   margin:10px 10px;
+    justify-content: space-between;
+    margin:10px 10px;
 }
 
 .banner{
@@ -173,7 +173,7 @@ body{
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
-    text-decoration: none;
+     text-decoration: none;
 }
 .menu a:hover{
     background-color: #EAF0ED;
@@ -218,23 +218,19 @@ position: relative;
 }
 .productInfo{
      display: flex;
-    justify-content: space-around;
-    border: 1px solid #EAF0ED;
+     justify-content: space-between;
+     max-width: 100%;
+     border: 1px solid #EAF0ED;
 }
 .productInfo p{
     font-size: 20px;
     color: #3F5D45;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 8px;     
+    padding: 10px 5px;
 }
 .productInfo span{ 
     font-weight: bold;
-    margin-left: 25px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 20px;
-    padding-left: 25px;
+    margin-left: 20px;
+    padding-left: 10px;
     border-left: 1px solid #EAF0ED;
 }
 .plusCart{
@@ -303,7 +299,6 @@ position: relative;
     padding-bottom: 16px;
     padding-right:26px;
     color: #3F5D45;
-    text-decoration: none;
 }
 .pageNum  a:hover{
     color: white;
